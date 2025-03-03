@@ -1,0 +1,13 @@
+apiVersion: builtin
+kind: HelmChartInflationGenerator
+name: chartA_v1.0.0
+chartHome: ../../base/helm-charts
+releaseName: test-release
+namespace: test-ns
+includeCRDs: true
+
+metadata:
+  name: chartA_v1.0.0
+additionalValuesFiles:
+  - ../base-v1/shared_values.yaml
+  - helm-values/values.yaml
