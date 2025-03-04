@@ -1,5 +1,5 @@
 replicaCount: 2
-
+namespaceOverride: default
 image:
   repository: nginx
   tag: "1.25.1"
